@@ -51,6 +51,21 @@ curl.exe -X POST http://127.0.0.1:8000/alert ^
 # série para o gráfico
 curl.exe "http://127.0.0.1:8000/series?lastN=10"
 
+cloudwalk-monitoring/
+├─ app.py
+├─ requirements.txt
+├─ README.md
+├─ .env.example
+├─ .gitignore
+├─ data/
+│  ├─ sample_transactions.csv
+│  └─ transactions.csv   (ignorado no git)
+└─ docs/
+   ├─ Tx_Monitoring_Step_3_2_PoC.pdf
+   └─ img/
+      └─ dashboard.png
+
+
 
 **PDF (detailed doc):** [docs/cloudwalk-monitoring-poc.pdf](docs/cloudwalk-monitoring-poc.pdf)
 
