@@ -40,5 +40,17 @@ copy .env.example .env
 uvicorn app:app --reload --port 8000
 # docs: http://127.0.0.1:8000/docs
 
+# health
+curl.exe http://127.0.0.1:8000/health
+
+# alerta (forçando valores)
+curl.exe -X POST http://127.0.0.1:8000/alert ^
+  -H "Content-Type: application/json" ^
+  -d "{\"minute\":\"2025-07-12 13:45\",\"failed\":50,\"denied\":50,\"reversed\":50}"
+
+# série para o gráfico
+curl.exe "http://127.0.0.1:8000/series?lastN=10"
+
+
 **PDF (detailed doc):** [docs/cloudwalk-monitoring-poc.pdf](docs/cloudwalk-monitoring-poc.pdf)
 
