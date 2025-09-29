@@ -39,3 +39,6 @@ copy .env.example .env
 # 3) run the API
 uvicorn app:app --reload --port 8000
 # docs: http://127.0.0.1:8000/docs
+
+**PDF (detailed doc):** [docs/cloudwalk-monitoring-poc.pdf](docs/cloudwalk-monitoring-poc.pdf)
+
